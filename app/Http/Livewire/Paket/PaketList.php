@@ -78,7 +78,8 @@ class PaketList extends Component
     public function render()
     {
         $datapaket = Paket::with('progres', 'balai')->where('wilayah_id', 3)->where('ta', 2020)->paginate(10);
-        //dd($datapaket);
+        $datakeuangan = $datapaket->progres;
+        dd($datakeuangan);
         return view('livewire.paket.paket-list', compact('datapaket'));
     }
 }

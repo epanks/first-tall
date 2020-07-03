@@ -39,13 +39,13 @@
         <table class="shadow-lg bg-white">
             <thead>
                 <tr>
-                    <th class="bg-indigo-300 border px-4 py-2">No</th>
-                    <th class="bg-indigo-300 border px-4 py-2">Nama Paket</th>
-                    <th class="bg-indigo-300 border px-4 py-2">Pagu</th>
-                    <th class="bg-indigo-300 border px-4 py-2">Keuangan</th>
-                    <th class="bg-indigo-300 border px-4 py-2">Progres Keuangan</th>
-                    <th class="bg-indigo-300 border px-4 py-2">Progres Fisik</th>
-                    <th class="bg-indigo-300 border px-4 py-2">Action</th>
+                    <th class="bg-gray-300 border border-black px-4 py-2">No</th>
+                    <th class="bg-gray-300 border border-black px-4 py-2">Nama Paket</th>
+                    <th class="bg-gray-300 border border-black px-4 py-2">Pagu</th>
+                    <th class="bg-gray-300 border border-black px-4 py-2">Keuangan</th>
+                    <th class="bg-gray-300 border border-black px-4 py-2">Progres Keuangan</th>
+                    <th class="bg-gray-300 border border-black px-4 py-2">Progres Fisik</th>
+                    <th class="bg-gray-300 border border-black px-4 py-2">Action</th>
                 </tr>
             </thead>
             <tbody>
