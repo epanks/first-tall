@@ -33,4 +33,5 @@ Route::middleware('auth')->group(function () {
     Route::post('logout', 'Auth\LogoutController')->name('logout');
 
     Route::view('password/confirm', 'auth.passwords.confirm')->name('password.confirm');
+    Route::livewire('/paket-list', 'paket.paket-list')->layout('layouts.app')->name('paket-list');
 });

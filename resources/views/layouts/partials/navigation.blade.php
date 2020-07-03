@@ -23,7 +23,8 @@
                 @auth
                 <a href="#" class="block text-cool-gray-400 hover:text-white px-4 md:py-4">Progres</a>
                 <a href="#" class="block text-cool-gray-400 hover:text-white px-4 md:py-4">Program</a>
-                <a href="#" class="block text-cool-gray-400 hover:text-white px-4 md:py-4">Paket</a>
+                <a href="{{ route('paket-list') }}"
+                    class="block text-cool-gray-400 hover:text-white px-4 md:py-4">Paket</a>
                 @endauth
             </div>
             <div class="flex flex-col md:flex-row md:items-center">
