@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'hash', 'username', 'picture',
     ];
 
     /**
@@ -36,4 +36,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function gravatar($size = 150)
+    {
+        return $this->picture ? "/storage/{$this->picture}" : "https://www.gravatar.com/avatar/" . md5(strtolower(trim($this->email))) . "?&s=" . $size;
+    }
+
+    public function getUsernameOrHashAttribute()
+    {
+        return $this->username ?? $this->hash;
+    }
 }
